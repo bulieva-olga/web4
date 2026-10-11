@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Стикерборд</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>Мои задачи</h2>
+
+    <!-- Управление -->
+    <div class="controls">
+        <input type="text" id="taskInput" placeholder="Что делаем?">
+        <button id="addBtn">Добавить</button>
+    </div>
+
+    <!-- Два поля -->
+    <div class="board-wrapper">
+
+        <!-- Поле со стикерами (откуда тащим) -->
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Поле со стикерами</h3>
+                <button class="clear-btn" data-clear="stickerField">Очистить</button>
+            </div>
+            <div class="drop-zone" id="stickerField"></div>
+        </div>
+
+        <!-- Борд (куда тащим) -->
+        <div class="panel">
+            <div class="panel-header">
+                <h3>Борд</h3>
+                <button class="clear-btn" data-clear="boardField">Очистить</button>
+            </div>
+            <div class="drop-zone board" id="boardField"></div>
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
